@@ -1,0 +1,39 @@
+<html>
+    <script>
+var soma = (a, b) => a + b;
+var subtracao = (a, b) => a - b;
+var multiplicacao = (a, b) => a * b;
+var divisao = (a, b) => a / b;
+
+while (true) {
+  var funcao = prompt("Escolha uma função (+, -, *, /) ou digite 'exit' para sair");
+
+  if (funcao === 'exit') {
+    break; // Exit the loop if the user types 'exit'
+  }
+
+  var valor1 = parseFloat(prompt("Digite o primeiro valor"));
+  var valor2 = parseFloat(prompt("Digite o segundo valor"));
+
+  var resultado;
+
+  if (funcao === "+") {
+    resultado = soma(valor1, valor2);
+  } else if (funcao === "-") {
+    resultado = subtracao(valor1, valor2);
+  } else if (funcao === "*") {
+    resultado = multiplicacao(valor1, valor2);
+  } else if (funcao === "/") {
+    resultado = divisao(valor1, valor2);
+  } else {
+    alert("Função inválida");
+    continue; // Skip the rest of the loop and ask for input again
+  }
+
+  alert("Resultado: " + resultado);
+  continue;
+}
+
+
+    </script>
+</html>
