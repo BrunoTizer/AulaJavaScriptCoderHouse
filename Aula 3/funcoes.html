@@ -1,16 +1,18 @@
 <html>
     <script>
-        function teste() {
-        var num = prompt("Digite um número"); //Digita um numero
-        var divisaonum = (num % 2)
-        console.log(divisaonum)
-        if (divisaonum == 0){
-        alert("É par")
-        } else {
-        alert("É Impar")
+        function verificarseepar() {
+            while (true) { // Este loop será executado continuamente
+                var num = prompt("Digite um número"); // Digita um número
+                var divisaonum = (num % 2)
+                console.log(divisaonum)
+                if (divisaonum == 0){
+                    alert("É par")
+                    break; // Sai do loop quando o número é par
+                } else {
+                    alert("É Impar")
+                }
+            }
         }
-        }
-
-        teste()
+        verificarseepar();
     </script>
 </html>
